@@ -1,0 +1,49 @@
+{
+  "name": "patchcab-template",
+  "description": "Patchab module template",
+  "version": "1.0.0",
+  "author": {
+    "name": "Your name",
+    "url": "https://your-site"
+  },
+  "license": "MIT",
+  "files": [
+    "modules"
+  ],
+  "scripts": {
+    "start": "patchcab",
+    "build": "patchcab --build",
+    "prepublish": "yarn build"
+  },
+  "patchcab": [
+    {
+      "name": "Module name",
+      "file": "module",
+      "size": {
+        "w": 6,
+        "h": 1
+      },
+      "tags": [
+        "video"
+      ],
+      "libs": [
+        "Tone"
+      ]
+    }
+  ],
+  "prettier": {
+    "useTabs": false,
+    "arrowParens": "always",
+    "semi": true,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "printWidth": 120,
+    "svelteSortOrder": "options-scripts-styles-markup"
+  },
+  "dependencies": {
+    "@patchcab/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@patchcab/modules": "^1.0.0"
+  }
+}
